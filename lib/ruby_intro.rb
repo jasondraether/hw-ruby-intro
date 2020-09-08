@@ -43,7 +43,7 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
-  return s.downcase.start_with?(/[b-df-hj-np-tv-z]/)
+  return s.downcase.match?(/\A[b-df-hj-np-tv-z]/)
 end
 
 def binary_multiple_of_4? s
